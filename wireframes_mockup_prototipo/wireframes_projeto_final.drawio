@@ -1,0 +1,1155 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.3.0" pages="20">
+  <diagram id="d01" name="Escolha de perfil">
+    <mxGraphModel dx="2066" dy="1202" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1440" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="frame" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="900" width="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Header" vertex="1">
+          <mxGeometry height="60" width="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;fontStyle=1;fontSize=16;" value="Sistema - Escolha de perfil" vertex="1">
+          <mxGeometry height="40" width="600" x="420" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Selecione o tipo de utilizador" vertex="1">
+          <mxGeometry height="30" width="420" x="510" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="opt1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="ALUNO" vertex="1">
+          <mxGeometry height="190" width="260" x="320" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="opt2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="DOCENTE" vertex="1">
+          <mxGeometry height="190" width="260" x="590" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="opt3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="ADMIN" vertex="1">
+          <mxGeometry height="190" width="260" x="860" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="anon" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="ENTRAR COMO ANONIMO" vertex="1">
+          <mxGeometry height="170" width="400" x="520" y="520" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="d02" name="Login (Admin)">
+    <mxGraphModel dx="2066" dy="1202" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1440" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="frame" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="900" width="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Header" vertex="1">
+          <mxGeometry height="60" width="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="card" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Login (ADMIN)" vertex="1">
+          <mxGeometry height="610" width="420" x="510" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="seg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Perfil selecionado" vertex="1">
+          <mxGeometry height="40" width="350" x="545" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="emailLbl" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Email" vertex="1">
+          <mxGeometry height="20" width="350" x="545" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="email" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#B0B0B0;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="40" width="350" x="545" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="passLbl" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Palavra-passe" vertex="1">
+          <mxGeometry height="20" width="350" x="545" y="365" as="geometry" />
+        </mxCell>
+        <mxCell id="pass" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#B0B0B0;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="40" width="350" x="545" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="btn" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;fontStyle=1;" value="ENTRAR" vertex="1">
+          <mxGeometry height="45" width="350" x="545" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="links" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Links: criar conta / escolher outro perfil" vertex="1">
+          <mxGeometry height="70" width="350" x="545" y="525" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="d03" name="Login (Docente)">
+    <mxGraphModel dx="2066" dy="1202" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1440" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="frame" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="900" width="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Header" vertex="1">
+          <mxGeometry height="60" width="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="card" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Login (DOCENTE)" vertex="1">
+          <mxGeometry height="610" width="420" x="510" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="seg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Perfil selecionado" vertex="1">
+          <mxGeometry height="40" width="350" x="545" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="emailLbl" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Email" vertex="1">
+          <mxGeometry height="20" width="350" x="545" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="email" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#B0B0B0;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="40" width="350" x="545" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="passLbl" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Palavra-passe" vertex="1">
+          <mxGeometry height="20" width="350" x="545" y="365" as="geometry" />
+        </mxCell>
+        <mxCell id="pass" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#B0B0B0;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="40" width="350" x="545" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="btn" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;fontStyle=1;" value="ENTRAR" vertex="1">
+          <mxGeometry height="45" width="350" x="545" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="links" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Links: criar conta / escolher outro perfil" vertex="1">
+          <mxGeometry height="70" width="350" x="545" y="525" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="d04" name="Login (Aluno)">
+    <mxGraphModel dx="2066" dy="1202" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1440" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="frame" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="900" width="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Header" vertex="1">
+          <mxGeometry height="60" width="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="card" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Login (ALUNO)" vertex="1">
+          <mxGeometry height="610" width="420" x="510" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="seg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Perfil selecionado" vertex="1">
+          <mxGeometry height="40" width="350" x="545" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="emailLbl" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Email" vertex="1">
+          <mxGeometry height="20" width="350" x="545" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="email" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#B0B0B0;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="40" width="350" x="545" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="passLbl" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Palavra-passe" vertex="1">
+          <mxGeometry height="20" width="350" x="545" y="365" as="geometry" />
+        </mxCell>
+        <mxCell id="pass" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#B0B0B0;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="40" width="350" x="545" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="btn" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;fontStyle=1;" value="ENTRAR" vertex="1">
+          <mxGeometry height="45" width="350" x="545" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="links" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Links: criar conta / escolher outro perfil" vertex="1">
+          <mxGeometry height="70" width="350" x="545" y="525" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="d05" name="Registo (Docente)">
+    <mxGraphModel dx="2066" dy="1202" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1440" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="frame" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="900" width="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Header" vertex="1">
+          <mxGeometry height="60" width="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="card" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Registo (DOCENTE)" vertex="1">
+          <mxGeometry height="690" width="420" x="510" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="seg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Perfil selecionado" vertex="1">
+          <mxGeometry height="40" width="350" x="545" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_Nome completo" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Nome completo" vertex="1">
+          <mxGeometry height="20" width="350" x="545" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="in_Nome completo" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#B0B0B0;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="40" width="350" x="545" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_Email" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Email" vertex="1">
+          <mxGeometry height="20" width="350" x="545" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="in_Email" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#B0B0B0;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="40" width="350" x="545" y="365" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_Palavra-passe" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Palavra-passe" vertex="1">
+          <mxGeometry height="20" width="350" x="545" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="in_Palavra-passe" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#B0B0B0;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="40" width="350" x="545" y="445" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_Gabinete" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Gabinete" vertex="1">
+          <mxGeometry height="20" width="350" x="545" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="in_Gabinete" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#B0B0B0;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="40" width="350" x="545" y="525" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_Departamento" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Departamento" vertex="1">
+          <mxGeometry height="20" width="350" x="545" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="in_Departamento" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#B0B0B0;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="40" width="350" x="545" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="btn" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;fontStyle=1;" value="CRIAR CONTA" vertex="1">
+          <mxGeometry height="45" width="350" x="545" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="links" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Links: iniciar sessao / escolher outro perfil" vertex="1">
+          <mxGeometry height="50" width="350" x="545" y="735" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="d06" name="Registo (Aluno)">
+    <mxGraphModel dx="2066" dy="1202" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1440" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="frame" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="900" width="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Header" vertex="1">
+          <mxGeometry height="60" width="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="card" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Registo (ALUNO)" vertex="1">
+          <mxGeometry height="690" width="420" x="510" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="seg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Perfil selecionado" vertex="1">
+          <mxGeometry height="40" width="350" x="545" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_Nome completo" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Nome completo" vertex="1">
+          <mxGeometry height="20" width="350" x="545" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="in_Nome completo" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#B0B0B0;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="40" width="350" x="545" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_Email" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Email" vertex="1">
+          <mxGeometry height="20" width="350" x="545" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="in_Email" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#B0B0B0;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="40" width="350" x="545" y="365" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_Palavra-passe" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Palavra-passe" vertex="1">
+          <mxGeometry height="20" width="350" x="545" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="in_Palavra-passe" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#B0B0B0;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="40" width="350" x="545" y="445" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_Numero de aluno" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Numero de aluno" vertex="1">
+          <mxGeometry height="20" width="350" x="545" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="in_Numero de aluno" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#B0B0B0;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="40" width="350" x="545" y="525" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_Curso" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Curso" vertex="1">
+          <mxGeometry height="20" width="350" x="545" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="in_Curso" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#B0B0B0;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="40" width="350" x="545" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="btn" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;fontStyle=1;" value="CRIAR CONTA" vertex="1">
+          <mxGeometry height="45" width="350" x="545" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="links" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Links: iniciar sessao / escolher outro perfil" vertex="1">
+          <mxGeometry height="50" width="350" x="545" y="735" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="d07" name="Lista Docentes (Anonimo)">
+    <mxGraphModel dx="2066" dy="1202" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1440" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="frame" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="900" width="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Header" vertex="1">
+          <mxGeometry height="60" width="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="sidebar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Menu" vertex="1">
+          <mxGeometry height="840" width="260" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nav1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Propostas" vertex="1">
+          <mxGeometry height="40" width="220" x="20" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="nav2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Docentes" vertex="1">
+          <mxGeometry height="40" width="220" x="20" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="content" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Conteudo" vertex="1">
+          <mxGeometry height="840" width="1180" x="260" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ctitle" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;fontStyle=1;fontSize=16;" value="Docentes" vertex="1">
+          <mxGeometry height="40" width="600" x="300" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="table" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;verticalAlign=top;" value="Tabela: Nome | Email | Data registo" vertex="1">
+          <mxGeometry height="360" width="980" x="300" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="row0" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Linha 1" vertex="1">
+          <mxGeometry height="45" width="940" x="320" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="row1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Linha 2" vertex="1">
+          <mxGeometry height="45" width="940" x="320" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="row2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Linha 3" vertex="1">
+          <mxGeometry height="45" width="940" x="320" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="row3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Linha 4" vertex="1">
+          <mxGeometry height="45" width="940" x="320" y="465" as="geometry" />
+        </mxCell>
+        <mxCell id="row4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Linha 5" vertex="1">
+          <mxGeometry height="45" width="940" x="320" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="btnBack" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;fontStyle=1;" value="Voltar" vertex="1">
+          <mxGeometry height="30" width="140" x="300" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="pSCSI4Y5zMash57tw_io-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Terminar sessao" vertex="1">
+          <mxGeometry height="40" width="190" x="1220" y="10" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="d10" name="Admin (Utilizadores)">
+    <mxGraphModel dx="2066" dy="1202" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1440" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="frame" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="900" width="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Header" vertex="1">
+          <mxGeometry height="60" width="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="sidebar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Menu Admin" vertex="1">
+          <mxGeometry height="840" width="260" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="navU" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Utilizadores" vertex="1">
+          <mxGeometry height="40" width="220" x="20" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="navP" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Perfil" vertex="1">
+          <mxGeometry height="40" width="220" x="20" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="content" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Conteudo" vertex="1">
+          <mxGeometry height="840" width="1180" x="260" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ctitle" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;fontStyle=1;fontSize=16;" value="Gestao de Utilizadores" vertex="1">
+          <mxGeometry height="40" width="980" x="300" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="filters" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Filtros: Estado / Tipo / Pesquisa" vertex="1">
+          <mxGeometry height="55" width="980" x="300" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="table" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;verticalAlign=top;" value="Tabela: Nome | Email | Tipo | Estado | Data | Acoes" vertex="1">
+          <mxGeometry height="600" width="980" x="300" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="arow0" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Linha 1 + tags + icones" vertex="1">
+          <mxGeometry height="45" width="940" x="320" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="arow1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Linha 2 + tags + icones" vertex="1">
+          <mxGeometry height="45" width="940" x="320" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="arow2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Linha 3 + tags + icones" vertex="1">
+          <mxGeometry height="45" width="940" x="320" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="arow3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Linha 4 + tags + icones" vertex="1">
+          <mxGeometry height="45" width="940" x="320" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="arow4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Linha 5 + tags + icones" vertex="1">
+          <mxGeometry height="45" width="940" x="320" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="arow5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Linha 6 + tags + icones" vertex="1">
+          <mxGeometry height="45" width="940" x="320" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="arow6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Linha 7 + tags + icones" vertex="1">
+          <mxGeometry height="45" width="940" x="320" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="arow7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Linha 8 + tags + icones" vertex="1">
+          <mxGeometry height="45" width="940" x="320" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="arow8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Linha 9 + tags + icones" vertex="1">
+          <mxGeometry height="45" width="940" x="320" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="arow9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Linha 10 + tags + icones" vertex="1">
+          <mxGeometry height="45" width="940" x="320" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="topRight" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Terminar sessao" vertex="1">
+          <mxGeometry height="40" width="190" x="1230" y="10" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="d11" name="Admin (Perfil)">
+    <mxGraphModel dx="2066" dy="1202" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1440" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="frame" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="900" width="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Header" vertex="1">
+          <mxGeometry height="60" width="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="sidebar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Menu Admin" vertex="1">
+          <mxGeometry height="840" width="260" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="navU" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Utilizadores" vertex="1">
+          <mxGeometry height="40" width="220" x="20" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="navP" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Perfil" vertex="1">
+          <mxGeometry height="40" width="220" x="20" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="content" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Conteudo" vertex="1">
+          <mxGeometry height="840" width="1180" x="260" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ctitle" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;fontStyle=1;fontSize=16;" value="Meu Perfil" vertex="1">
+          <mxGeometry height="40" width="980" x="300" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="card1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Informacoes Pessoais" vertex="1">
+          <mxGeometry height="260" width="520" x="300" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="card2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Informacoes da Conta" vertex="1">
+          <mxGeometry height="260" width="440" x="840" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="card3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Alterar Palavra-passe" vertex="1">
+          <mxGeometry height="320" width="980" x="300" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="topRight" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Terminar sessao" vertex="1">
+          <mxGeometry height="40" width="190" x="1230" y="10" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="d20" name="Docente (Gestao propostas)">
+    <mxGraphModel dx="2066" dy="1202" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1440" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="frame" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="900" width="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Header" vertex="1">
+          <mxGeometry height="60" width="1440" as="geometry" />
+        </mxCell>
+        <mxCell id="sidebar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Menu Docente" vertex="1">
+          <mxGeometry height="840" width="260" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nav1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Minhas UC&#39;s" vertex="1">
+          <mxGeometry height="40" width="220" x="20" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="nav2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Gestao de propostas" vertex="1">
+          <mxGeometry height="40" width="220" x="20" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="nav3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Nova Proposta" vertex="1">
+          <mxGeometry height="40" width="220" x="20" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="nav4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Docentes" vertex="1">
+          <mxGeometry height="40" width="220" x="20" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="nav5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Perfil" vertex="1">
+          <mxGeometry height="40" width="220" x="20" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="content" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Conteudo" vertex="1">
+          <mxGeometry height="840" width="1180" x="260" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ctitle" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;fontStyle=1;fontSize=16;" value="Gestao de propostas" vertex="1">
+          <mxGeometry height="40" width="890" x="300" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="btnNew" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;fontStyle=1;" value="+ NOVA PROPOSTA" vertex="1">
+          <mxGeometry height="40" width="200" x="1200" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="pc0" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Card proposta 1: titulo + descricao + acoes" vertex="1">
+          <mxGeometry height="140" width="1100" x="300" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="pc1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Card proposta 2: titulo + descricao + acoes" vertex="1">
+          <mxGeometry height="140" width="1100" x="300" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="pc2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Card proposta 3: titulo + descricao + acoes" vertex="1">
+          <mxGeometry height="140" width="1100" x="300" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="pc3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Card proposta 4: titulo + descricao + acoes" vertex="1">
+          <mxGeometry height="140" width="1100" x="300" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="topRight" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9E9E9E;fillColor=none;" value="Terminar sessao" vertex="1">
+          <mxGeometry height="40" width="180" x="1240" y="10" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Admin - Gestao de Utilizadores" id="10">
+    <mxGraphModel dx="2066" dy="1202" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="artboard" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#999999;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="1040" width="1880" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;fontStyle=1;" value="Header" vertex="1">
+          <mxGeometry height="70" width="1880" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Sidebar" vertex="1">
+          <mxGeometry height="970" width="280" x="20" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: Utilizadores (active)" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: Perfil" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=14;" value="Gestao de Utilizadores" vertex="1">
+          <mxGeometry height="30" width="900" x="340" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" value="Filtros / Pesquisa" vertex="1">
+          <mxGeometry height="20" width="900" x="340" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Barra de filtros" vertex="1">
+          <mxGeometry height="60" width="1540" x="340" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;verticalAlign=top;" value="Tabela: Utilizadores" vertex="1">
+          <mxGeometry height="720" width="1540" x="340" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;fontSize=12;" value="Colunas: Nome | Email | Tipo | Estado | Data | Acoes" vertex="1">
+          <mxGeometry height="20" width="1500" x="360" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Linha 1" vertex="1">
+          <mxGeometry height="60" width="1500" x="360" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Linha 2" vertex="1">
+          <mxGeometry height="60" width="1500" x="360" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Linha 3" vertex="1">
+          <mxGeometry height="60" width="1500" x="360" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Linha 4" vertex="1">
+          <mxGeometry height="60" width="1500" x="360" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Linha 5" vertex="1">
+          <mxGeometry height="60" width="1500" x="360" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Linha 6" vertex="1">
+          <mxGeometry height="60" width="1500" x="360" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Linha 7" vertex="1">
+          <mxGeometry height="60" width="1500" x="360" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Linha 8" vertex="1">
+          <mxGeometry height="60" width="1500" x="360" y="820" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Admin - Perfil" id="11">
+    <mxGraphModel dx="2066" dy="1202" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="artboard" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#999999;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="1040" width="1880" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;fontStyle=1;" value="Header" vertex="1">
+          <mxGeometry height="70" width="1880" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Sidebar" vertex="1">
+          <mxGeometry height="970" width="280" x="20" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: Utilizadores" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: Perfil (active)" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=14;" value="Meu Perfil" vertex="1">
+          <mxGeometry height="30" width="600" x="340" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Card: Informacoes Pessoais" vertex="1">
+          <mxGeometry height="320" width="720" x="340" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Card: Informacoes da Conta" vertex="1">
+          <mxGeometry height="320" width="780" x="1100" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;verticalAlign=top;" value="Card: Alterar Palavra-passe" vertex="1">
+          <mxGeometry height="420" width="1540" x="340" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" value="Palavra-passe atual" vertex="1">
+          <mxGeometry height="20" width="400" x="380" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Input" vertex="1">
+          <mxGeometry height="45" width="1460" x="380" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" value="Nova palavra-passe" vertex="1">
+          <mxGeometry height="20" width="400" x="380" y="675" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Input" vertex="1">
+          <mxGeometry height="45" width="1460" x="380" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="22" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" value="Confirmar nova palavra-passe" vertex="1">
+          <mxGeometry height="20" width="400" x="380" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Input" vertex="1">
+          <mxGeometry height="45" width="1460" x="380" y="795" as="geometry" />
+        </mxCell>
+        <mxCell id="24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Botao: Alterar palavra-passe" vertex="1">
+          <mxGeometry height="50" width="260" x="380" y="860" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Docente - Minhas UCs" id="12">
+    <mxGraphModel dx="2066" dy="1202" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="artboard" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#999999;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="1040" width="1880" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;fontStyle=1;" value="Header" vertex="1">
+          <mxGeometry height="70" width="1880" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Sidebar" vertex="1">
+          <mxGeometry height="970" width="280" x="20" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: Minhas UCs (active)" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: Gestao de propostas" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: Nova Proposta" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: Docentes" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: Perfil" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=14;" value="Minhas Unidades Curriculares" vertex="1">
+          <mxGeometry height="30" width="900" x="340" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" value="Lista em cards" vertex="1">
+          <mxGeometry height="20" width="400" x="340" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Card UC 1" vertex="1">
+          <mxGeometry height="170" width="1540" x="340" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Etiqueta (sigla)" vertex="1">
+          <mxGeometry height="30" width="60" x="370" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" value="Titulo da UC" vertex="1">
+          <mxGeometry height="20" width="400" x="450" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="22" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" value="Descricao" vertex="1">
+          <mxGeometry height="40" width="700" x="450" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Acoes" vertex="1">
+          <mxGeometry height="40" width="80" x="1780" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Card UC 2" vertex="1">
+          <mxGeometry height="170" width="1540" x="340" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Etiqueta (sigla)" vertex="1">
+          <mxGeometry height="30" width="60" x="370" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="26" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" value="Titulo da UC" vertex="1">
+          <mxGeometry height="20" width="400" x="450" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="27" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" value="Descricao" vertex="1">
+          <mxGeometry height="40" width="700" x="450" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Acoes" vertex="1">
+          <mxGeometry height="40" width="80" x="1780" y="430" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Docente - Minhas Propostas" id="13">
+    <mxGraphModel dx="2066" dy="1202" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="artboard" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#999999;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="1040" width="1880" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;fontStyle=1;" value="Header" vertex="1">
+          <mxGeometry height="70" width="1880" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Sidebar" vertex="1">
+          <mxGeometry height="970" width="280" x="20" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: Minhas UCs" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: Gestao de propostas (active)" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: Nova Proposta" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: Docentes" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: Perfil" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=14;" value="Gestao de propostas" vertex="1">
+          <mxGeometry height="30" width="900" x="340" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Botao: Nova Proposta" vertex="1">
+          <mxGeometry height="50" width="200" x="1680" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Card Proposta 2" vertex="1">
+          <mxGeometry height="200" width="1540" x="340" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="25" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" value="Titulo" vertex="1">
+          <mxGeometry height="20" width="900" x="370" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="26" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" value="Descricao curta" vertex="1">
+          <mxGeometry height="50" width="1100" x="370" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Badge Estado" vertex="1">
+          <mxGeometry height="35" width="160" x="1700" y="415" as="geometry" />
+        </mxCell>
+        <mxCell id="28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Botoes: Ver / Editar" vertex="1">
+          <mxGeometry height="45" width="260" x="370" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Card Proposta 3" vertex="1">
+          <mxGeometry height="200" width="1540" x="340" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="30" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" value="Titulo" vertex="1">
+          <mxGeometry height="20" width="900" x="370" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="31" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" value="Descricao curta" vertex="1">
+          <mxGeometry height="50" width="1100" x="370" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Badge Estado" vertex="1">
+          <mxGeometry height="35" width="160" x="1700" y="645" as="geometry" />
+        </mxCell>
+        <mxCell id="33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Botoes: Ver / Editar" vertex="1">
+          <mxGeometry height="45" width="260" x="370" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Card Proposta 4" vertex="1">
+          <mxGeometry height="200" width="1540" x="340" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="35" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" value="Titulo" vertex="1">
+          <mxGeometry height="20" width="900" x="370" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="36" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" value="Descricao curta" vertex="1">
+          <mxGeometry height="50" width="1100" x="370" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Badge Estado" vertex="1">
+          <mxGeometry height="35" width="160" x="1700" y="875" as="geometry" />
+        </mxCell>
+        <mxCell id="38" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Botoes: Ver / Editar" vertex="1">
+          <mxGeometry height="45" width="260" x="370" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="eqZko38mvGM882kSDj6b-38" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="200" width="1540" x="340" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="eqZko38mvGM882kSDj6b-38" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Card Proposta 1" vertex="1">
+          <mxGeometry height="200" width="1540" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="eqZko38mvGM882kSDj6b-38" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" value="Titulo" vertex="1">
+          <mxGeometry height="20" width="900" x="30" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="eqZko38mvGM882kSDj6b-38" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" value="Descricao curta" vertex="1">
+          <mxGeometry height="50" width="1100" x="30" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="22" parent="eqZko38mvGM882kSDj6b-38" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Badge Estado" vertex="1">
+          <mxGeometry height="35" width="160" x="1360" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="23" parent="eqZko38mvGM882kSDj6b-38" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Botoes: Ver / Editar" vertex="1">
+          <mxGeometry height="45" width="260" x="30" y="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Docente - Nova Proposta" id="14">
+    <mxGraphModel dx="2066" dy="1202" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="artboard" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#999999;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="1040" width="1880" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;fontStyle=1;" value="Header" vertex="1">
+          <mxGeometry height="70" width="1880" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Sidebar" vertex="1">
+          <mxGeometry height="970" width="280" x="20" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: Minhas UCs" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: Gestao de propostas" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: Nova Proposta (active)" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: Docentes" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: Perfil" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=14;" value="Criar nova proposta" vertex="1">
+          <mxGeometry height="30" width="900" x="340" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;verticalAlign=top;" value="Formulario" vertex="1">
+          <mxGeometry height="850" width="1540" x="340" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" value="Titulo da proposta" vertex="1">
+          <mxGeometry height="20" width="600" x="380" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Input" vertex="1">
+          <mxGeometry height="45" width="1440" x="380" y="235" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" value="Descricao e objetivos" vertex="1">
+          <mxGeometry height="20" width="600" x="380" y="295" as="geometry" />
+        </mxCell>
+        <mxCell id="22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Textarea" vertex="1">
+          <mxGeometry height="95" width="1440" x="380" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="23" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" value="Plano de trabalho (opcional)" vertex="1">
+          <mxGeometry height="20" width="600" x="380" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Textarea" vertex="1">
+          <mxGeometry height="95" width="1440" x="380" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="25" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" value="Estado" vertex="1">
+          <mxGeometry height="20" width="600" x="380" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Select" vertex="1">
+          <mxGeometry height="45" width="1440" x="380" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="27" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" value="Coorientadores" vertex="1">
+          <mxGeometry height="20" width="600" x="380" y="695" as="geometry" />
+        </mxCell>
+        <mxCell id="28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Select" vertex="1">
+          <mxGeometry height="45" width="1000" x="380" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Botao: Adicionar" vertex="1">
+          <mxGeometry height="45" width="180" x="1400" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="30" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" value="Palavras-chave" vertex="1">
+          <mxGeometry height="20" width="600" x="380" y="765" as="geometry" />
+        </mxCell>
+        <mxCell id="31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Select" vertex="1">
+          <mxGeometry height="45" width="1000" x="380" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Botao: Adicionar" vertex="1">
+          <mxGeometry height="45" width="180" x="1400" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Input (nova palavra-chave)" vertex="1">
+          <mxGeometry height="45" width="1000" x="380" y="845" as="geometry" />
+        </mxCell>
+        <mxCell id="34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Botao: Criar" vertex="1">
+          <mxGeometry height="45" width="180" x="1400" y="845" as="geometry" />
+        </mxCell>
+        <mxCell id="35" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" value="Alunos atribuidos" vertex="1">
+          <mxGeometry height="20" width="600" x="380" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="36" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Select" vertex="1">
+          <mxGeometry height="45" width="1000" x="380" y="915" as="geometry" />
+        </mxCell>
+        <mxCell id="37" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Botao: Adicionar" vertex="1">
+          <mxGeometry height="45" width="180" x="1400" y="915" as="geometry" />
+        </mxCell>
+        <mxCell id="38" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Botao: Criar Proposta" vertex="1">
+          <mxGeometry height="55" width="240" x="380" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="39" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Botao: Cancelar" vertex="1">
+          <mxGeometry height="55" width="200" x="640" y="640" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Docente - Lista Docentes" id="15">
+    <mxGraphModel dx="2066" dy="1202" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="artboard" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#999999;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="1040" width="1880" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;fontStyle=1;" value="Header" vertex="1">
+          <mxGeometry height="70" width="1880" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Sidebar" vertex="1">
+          <mxGeometry height="970" width="280" x="20" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: Minhas UCs" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: Gestao de propostas" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: Nova Proposta" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: Docentes (active)" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: Perfil" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=14;" value="Docentes" vertex="1">
+          <mxGeometry height="30" width="600" x="340" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;verticalAlign=top;" value="Tabela: Docentes" vertex="1">
+          <mxGeometry height="520" width="1540" x="340" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;fontSize=12;" value="Colunas: Nome | Email | Data de registo" vertex="1">
+          <mxGeometry height="20" width="1500" x="360" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Linha 1" vertex="1">
+          <mxGeometry height="70" width="1500" x="360" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Linha 2" vertex="1">
+          <mxGeometry height="70" width="1500" x="360" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Linha 3" vertex="1">
+          <mxGeometry height="70" width="1500" x="360" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Linha 4" vertex="1">
+          <mxGeometry height="70" width="1500" x="360" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Linha 5" vertex="1">
+          <mxGeometry height="70" width="1500" x="360" y="560" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Docente - Perfil" id="16">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="artboard" parent="1" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#999999;fillColor=none;" vertex="1">
+          <mxGeometry x="20" y="20" width="1880" height="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" value="Header" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;fontStyle=1;" vertex="1">
+          <mxGeometry x="20" y="20" width="1880" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" value="Sidebar" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" vertex="1">
+          <mxGeometry x="20" y="90" width="280" height="970" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" value="Nav: Minhas UCs" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" vertex="1">
+          <mxGeometry x="40" y="130" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" value="Nav: Gestao de propostas" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" vertex="1">
+          <mxGeometry x="40" y="205" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" value="Nav: Nova Proposta" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" vertex="1">
+          <mxGeometry x="40" y="280" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" value="Nav: Docentes" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" vertex="1">
+          <mxGeometry x="40" y="355" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" value="Nav: Perfil (active)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" vertex="1">
+          <mxGeometry x="40" y="430" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" value="Meu Perfil" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=14;" vertex="1">
+          <mxGeometry x="340" y="110" width="600" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" value="Card: Informacoes Pessoais" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" vertex="1">
+          <mxGeometry x="340" y="170" width="720" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" value="Card: Informacoes Docente" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" vertex="1">
+          <mxGeometry x="1100" y="170" width="780" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" value="Card: Alterar Palavra-passe" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" vertex="1">
+          <mxGeometry x="340" y="520" width="1540" height="420" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Aluno - UCs Disponiveis" id="17">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="artboard" parent="1" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#999999;fillColor=none;" vertex="1">
+          <mxGeometry x="20" y="20" width="1880" height="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" value="Header" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;fontStyle=1;" vertex="1">
+          <mxGeometry x="20" y="20" width="1880" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" value="Sidebar" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" vertex="1">
+          <mxGeometry x="20" y="90" width="280" height="970" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" value="Nav: UCs Disponiveis (active)" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" vertex="1">
+          <mxGeometry x="40" y="130" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" value="Nav: Candidaturas" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" vertex="1">
+          <mxGeometry x="40" y="205" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" value="Nav: Perfil" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" vertex="1">
+          <mxGeometry x="40" y="280" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" value="Unidades Curriculares" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=14;" vertex="1">
+          <mxGeometry x="340" y="110" width="900" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" value="Card UC 1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" vertex="1">
+          <mxGeometry x="340" y="190" width="480" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" value="Sigla" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" vertex="1">
+          <mxGeometry x="360" y="210" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" value="Titulo" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" vertex="1">
+          <mxGeometry x="440" y="215" width="320" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" value="Info (prof/ano)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" vertex="1">
+          <mxGeometry x="440" y="245" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" value="Card UC 2" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" vertex="1">
+          <mxGeometry x="860" y="190" width="480" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="1" value="Sigla" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" vertex="1">
+          <mxGeometry x="880" y="210" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="22" parent="1" value="Titulo" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" vertex="1">
+          <mxGeometry x="960" y="215" width="320" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="23" parent="1" value="Info (prof/ano)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" vertex="1">
+          <mxGeometry x="960" y="245" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="24" parent="1" value="Card UC 3" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" vertex="1">
+          <mxGeometry x="1380" y="190" width="480" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="25" parent="1" value="Sigla" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" vertex="1">
+          <mxGeometry x="1400" y="210" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="26" parent="1" value="Titulo" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" vertex="1">
+          <mxGeometry x="1480" y="215" width="320" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="27" parent="1" value="Info (prof/ano)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" vertex="1">
+          <mxGeometry x="1480" y="245" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="28" parent="1" value="Card UC 4" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" vertex="1">
+          <mxGeometry x="340" y="440" width="480" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="29" parent="1" value="Sigla" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" vertex="1">
+          <mxGeometry x="360" y="460" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="30" parent="1" value="Titulo" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" vertex="1">
+          <mxGeometry x="440" y="465" width="320" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="31" parent="1" value="Info (prof/ano)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" vertex="1">
+          <mxGeometry x="440" y="495" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="32" parent="1" value="Card UC 5" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" vertex="1">
+          <mxGeometry x="860" y="440" width="480" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="33" parent="1" value="Sigla" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" vertex="1">
+          <mxGeometry x="880" y="460" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="34" parent="1" value="Titulo" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" vertex="1">
+          <mxGeometry x="960" y="465" width="320" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="35" parent="1" value="Info (prof/ano)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" vertex="1">
+          <mxGeometry x="960" y="495" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="36" parent="1" value="Card UC 6" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" vertex="1">
+          <mxGeometry x="1380" y="440" width="480" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="37" parent="1" value="Sigla" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" vertex="1">
+          <mxGeometry x="1400" y="460" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="38" parent="1" value="Titulo" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" vertex="1">
+          <mxGeometry x="1480" y="465" width="320" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="39" parent="1" value="Info (prof/ano)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" vertex="1">
+          <mxGeometry x="1480" y="495" width="320" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Aluno - Minhas Candidaturas" id="18">
+    <mxGraphModel dx="2066" dy="1202" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="artboard" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#999999;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="1040" width="1880" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;fontStyle=1;" value="Header" vertex="1">
+          <mxGeometry height="70" width="1880" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Sidebar" vertex="1">
+          <mxGeometry height="970" width="280" x="20" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: UCs Disponiveis" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: Candidaturas (active)" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: Perfil" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=14;" value="Minhas Candidaturas" vertex="1">
+          <mxGeometry height="30" width="900" x="340" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;verticalAlign=top;" value="Card Candidatura" vertex="1">
+          <mxGeometry height="420" width="1540" x="340" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Badge Estado" vertex="1">
+          <mxGeometry height="35" width="160" x="1700" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" value="Titulo proposta" vertex="1">
+          <mxGeometry height="20" width="900" x="380" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" value="Descricao curta" vertex="1">
+          <mxGeometry height="50" width="1200" x="380" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=12;" value="Detalhes (orientador/uc/data)" vertex="1">
+          <mxGeometry height="30" width="1200" x="380" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Feedback" vertex="1">
+          <mxGeometry height="120" width="1480" x="380" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Botao: Ver Proposta" vertex="1">
+          <mxGeometry height="55" width="240" x="380" y="510" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Aluno - Perfil" id="19">
+    <mxGraphModel dx="2066" dy="1202" grid="1" gridSize="10" guides="1" tooltips="1" connect="0" arrows="0" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="artboard" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#999999;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="1040" width="1880" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;fontStyle=1;" value="Header" vertex="1">
+          <mxGeometry height="60" width="1880" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Sidebar" vertex="1">
+          <mxGeometry height="980" width="280" x="20" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: UCs Disponiveis" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: Candidaturas" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Nav: Perfil (active)" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=14;" value="Meu Perfil" vertex="1">
+          <mxGeometry height="30" width="600" x="340" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Card: Informacoes Pessoais" vertex="1">
+          <mxGeometry height="320" width="720" x="340" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Card: Informacoes Aluno" vertex="1">
+          <mxGeometry height="320" width="780" x="1100" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#666666;fillColor=none;" value="Card: Alterar Palavra-passe" vertex="1">
+          <mxGeometry height="420" width="1540" x="340" y="520" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

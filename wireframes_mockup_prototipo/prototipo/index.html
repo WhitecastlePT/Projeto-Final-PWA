@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGP - Protótipo Interativo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a2e;
+            min-height: 100vh;
+        }
+
+        /* Barra de navegação do protótipo */
+        .proto-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #16213e;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            z-index: 1000;
+            border-bottom: 2px solid #e94560;
+        }
+
+        .proto-nav h1 {
+            color: #e94560;
+            font-size: 16px;
+            margin-right: 20px;
+        }
+
+        .proto-nav select {
+            background: #0f3460;
+            color: #fff;
+            border: 1px solid #e94560;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .proto-nav .info {
+            color: #888;
+            font-size: 12px;
+            margin-left: auto;
+        }
+
+        .proto-nav .current-view {
+            color: #4ecca3;
+            font-weight: bold;
+        }
+
+        /* Container principal */
+        .proto-container {
+            padding-top: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        /* Área do screenshot */
+        .screen-wrapper {
+            position: relative;
+            margin: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .screen-wrapper img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Hotspots clicáveis */
+        .hotspot {
+            position: absolute;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .hotspot:hover {
+            background: rgba(233, 69, 96, 0.3);
+            outline: 2px dashed #e94560;
+        }
+
+        /* Indicador de hotspot */
+        .hotspot::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 20px;
+            height: 20px;
+            background: rgba(233, 69, 96, 0.5);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+            pointer-events: none;
+            opacity: 0;
+        }
+
+        .show-hotspots .hotspot::after {
+            opacity: 1;
+        }
+
+        @keyframes pulse {
+            0% { transform: translate(-50%, -50%) scale(1); opacity: 0.7; }
+            50% { transform: translate(-50%, -50%) scale(1.5); opacity: 0.3; }
+            100% { transform: translate(-50%, -50%) scale(1); opacity: 0.7; }
+        }
+
+        /* Tooltip */
+        .hotspot[data-tooltip]:hover::before {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #16213e;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            white-space: nowrap;
+            z-index: 100;
+        }
+
+        /* Toggle hotspots */
+        .toggle-btn {
+            background: #0f3460;
+            color: #fff;
+            border: 1px solid #4ecca3;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .toggle-btn:hover {
+            background: #4ecca3;
+            color: #16213e;
+        }
+
+        .toggle-btn.active {
+            background: #4ecca3;
+            color: #16213e;
+        }
+
+        /* Hidden screens */
+        .screen {
+            display: none;
+        }
+
+        .screen.active {
+            display: block;
+        }
+
+        /* Mini mapa de navegação */
+        .nav-map {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #16213e;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e94560;
+            max-width: 300px;
+        }
+
+        .nav-map h3 {
+            color: #e94560;
+            font-size: 12px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .nav-map-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .nav-map-links button {
+            background: #0f3460;
+            color: #888;
+            border: 1px solid #333;
+            padding: 4px 8px;
+            font-size: 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .nav-map-links button:hover {
+            background: #e94560;
+            color: #fff;
+            border-color: #e94560;
+        }
+
+        .nav-map-links button.current {
+            background: #4ecca3;
+            color: #16213e;
+            border-color: #4ecca3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegação do protótipo -->
+    <nav class="proto-nav">
+        <h1>SGP Protótipo</h1>
+        <select id="viewSelector" onchange="goToView(this.value)">
+            <optgroup label="Páginas Públicas">
+                <option value="01-escolha-perfil">01 - Escolha de Perfil</option>
+                <option value="02-login-admin">02 - Login Admin</option>
+                <option value="03-login-docente">03 - Login Docente</option>
+                <option value="04-login-aluno">04 - Login Aluno</option>
+                <option value="05-registo-docente">05 - Registo Docente</option>
+                <option value="06-registo-aluno">06 - Registo Aluno</option>
+                <option value="07-lista-docentes-anonimo">07 - Lista Docentes (Anónimo)</option>
+            </optgroup>
+            <optgroup label="Administrador">
+                <option value="10-admin-utilizadores">10 - Gestão Utilizadores</option>
+                <option value="11-admin-perfil">11 - Perfil Admin</option>
+            </optgroup>
+            <optgroup label="Docente">
+                <option value="20-docente-minhas-ucs">20 - Minhas UCs</option>
+                <option value="21-docente-minhas-propostas">21 - Minhas Propostas</option>
+                <option value="22-docente-nova-proposta">22 - Nova Proposta</option>
+                <option value="23-docente-lista-docentes">23 - Lista Docentes</option>
+                <option value="24-docente-perfil">24 - Perfil Docente</option>
+            </optgroup>
+            <optgroup label="Aluno">
+                <option value="30-aluno-ucs-disponiveis">30 - UCs Disponíveis</option>
+                <option value="31-aluno-minhas-candidaturas">31 - Minhas Candidaturas</option>
+                <option value="32-aluno-perfil">32 - Perfil Aluno</option>
+            </optgroup>
+        </select>
+        <button class="toggle-btn" onclick="toggleHotspots()">Mostrar Hotspots</button>
+        <span class="info">Clica nas áreas interativas para navegar | <span class="current-view" id="currentViewName">Escolha de Perfil</span></span>
+    </nav>
+
+    <!-- Container principal -->
+    <div class="proto-container" id="protoContainer">
+
+        <!-- 01 - Escolha de Perfil -->
+        <div class="screen active" id="screen-01-escolha-perfil">
+            <div class="screen-wrapper">
+                <img src="01-escolha-perfil.png" alt="Escolha de Perfil">
+                <!-- Botão Administrador -->
+                <div class="hotspot" data-tooltip="Login Admin" onclick="goToView('02-login-admin')"
+                     style="left: 26%; top: 45%; width: 15%; height: 8%;"></div>
+                <!-- Botão Docente -->
+                <div class="hotspot" data-tooltip="Login Docente" onclick="goToView('03-login-docente')"
+                     style="left: 42.5%; top: 45%; width: 15%; height: 8%;"></div>
+                <!-- Botão Aluno -->
+                <div class="hotspot" data-tooltip="Login Aluno" onclick="goToView('04-login-aluno')"
+                     style="left: 59%; top: 45%; width: 15%; height: 8%;"></div>
+            </div>
+        </div>
+
+        <!-- 02 - Login Admin -->
+        <div class="screen" id="screen-02-login-admin">
+            <div class="screen-wrapper">
+                <img src="02-login-admin.png" alt="Login Administrador">
+                <!-- Botão Entrar -->
+                <div class="hotspot" data-tooltip="Entrar como Admin" onclick="goToView('10-admin-utilizadores')"
+                     style="left: 39%; top: 52%; width: 22%; height: 5%;"></div>
+                <!-- Link voltar -->
+                <div class="hotspot" data-tooltip="Escolher outro perfil" onclick="goToView('01-escolha-perfil')"
+                     style="left: 39%; top: 66%; width: 22%; height: 3%;"></div>
+            </div>
+        </div>
+
+        <!-- 03 - Login Docente -->
+        <div class="screen" id="screen-03-login-docente">
+            <div class="screen-wrapper">
+                <img src="03-login-docente.png" alt="Login Docente">
+                <!-- Botão Entrar -->
+                <div class="hotspot" data-tooltip="Entrar como Docente" onclick="goToView('20-docente-minhas-ucs')"
+                     style="left: 39%; top: 52%; width: 22%; height: 5%;"></div>
+                <!-- Link criar conta -->
+                <div class="hotspot" data-tooltip="Criar conta" onclick="goToView('05-registo-docente')"
+                     style="left: 39%; top: 62%; width: 22%; height: 3%;"></div>
+                <!-- Link voltar -->
+                <div class="hotspot" data-tooltip="Escolher outro perfil" onclick="goToView('01-escolha-perfil')"
+                     style="left: 39%; top: 66%; width: 22%; height: 3%;"></div>
+            </div>
+        </div>
+
+        <!-- 04 - Login Aluno -->
+        <div class="screen" id="screen-04-login-aluno">
+            <div class="screen-wrapper">
+                <img src="04-login-aluno.png" alt="Login Aluno">
+                <!-- Botão Entrar -->
+                <div class="hotspot" data-tooltip="Entrar como Aluno" onclick="goToView('30-aluno-ucs-disponiveis')"
+                     style="left: 39%; top: 52%; width: 22%; height: 5%;"></div>
+                <!-- Link criar conta -->
+                <div class="hotspot" data-tooltip="Criar conta" onclick="goToView('06-registo-aluno')"
+                     style="left: 39%; top: 62%; width: 22%; height: 3%;"></div>
+                <!-- Link voltar -->
+                <div class="hotspot" data-tooltip="Escolher outro perfil" onclick="goToView('01-escolha-perfil')"
+                     style="left: 39%; top: 66%; width: 22%; height: 3%;"></div>
+            </div>
+        </div>
+
+        <!-- 05 - Registo Docente -->
+        <div class="screen" id="screen-05-registo-docente">
+            <div class="screen-wrapper">
+                <img src="05-registo-docente.png" alt="Registo Docente">
+                <!-- Botão Criar Conta -->
+                <div class="hotspot" data-tooltip="Criar Conta (simular sucesso)" onclick="alert('Conta criada! Aguarde aprovação.')"
+                     style="left: 39%; top: 62%; width: 22%; height: 5%;"></div>
+                <!-- Link login -->
+                <div class="hotspot" data-tooltip="Já tem conta? Iniciar sessão" onclick="goToView('03-login-docente')"
+                     style="left: 39%; top: 72%; width: 22%; height: 3%;"></div>
+                <!-- Link voltar -->
+                <div class="hotspot" data-tooltip="Escolher outro perfil" onclick="goToView('01-escolha-perfil')"
+                     style="left: 39%; top: 76%; width: 22%; height: 3%;"></div>
+            </div>
+        </div>
+
+        <!-- 06 - Registo Aluno -->
+        <div class="screen" id="screen-06-registo-aluno">
+            <div class="screen-wrapper">
+                <img src="06-registo-aluno.png" alt="Registo Aluno">
+                <!-- Botão Criar Conta -->
+                <div class="hotspot" data-tooltip="Criar Conta (simular sucesso)" onclick="alert('Conta criada! Aguarde aprovação.')"
+                     style="left: 39%; top: 62%; width: 22%; height: 5%;"></div>
+                <!-- Link login -->
+                <div class="hotspot" data-tooltip="Já tem conta? Iniciar sessão" onclick="goToView('04-login-aluno')"
+                     style="left: 39%; top: 72%; width: 22%; height: 3%;"></div>
+                <!-- Link voltar -->
+                <div class="hotspot" data-tooltip="Escolher outro perfil" onclick="goToView('01-escolha-perfil')"
+                     style="left: 39%; top: 76%; width: 22%; height: 3%;"></div>
+            </div>
+        </div>
+
+        <!-- 07 - Lista Docentes Anónimo -->
+        <div class="screen" id="screen-07-lista-docentes-anonimo">
+            <div class="screen-wrapper">
+                <img src="07-lista-docentes-anonimo.png" alt="Lista Docentes (Anónimo)">
+                <!-- Link voltar ao início -->
+                <div class="hotspot" data-tooltip="Voltar ao início" onclick="goToView('01-escolha-perfil')"
+                     style="left: 0; top: 0; width: 10%; height: 5%;"></div>
+            </div>
+        </div>
+
+        <!-- 10 - Admin Utilizadores -->
+        <div class="screen" id="screen-10-admin-utilizadores">
+            <div class="screen-wrapper">
+                <img src="10-admin-utilizadores.png" alt="Gestão de Utilizadores">
+                <!-- Menu Perfil -->
+                <div class="hotspot" data-tooltip="Perfil" onclick="goToView('11-admin-perfil')"
+                     style="left: 85%; top: 1%; width: 8%; height: 4%;"></div>
+                <!-- Botão Terminar Sessão -->
+                <div class="hotspot" data-tooltip="Terminar Sessão" onclick="goToView('01-escolha-perfil')"
+                     style="left: 93%; top: 1%; width: 7%; height: 4%;"></div>
+            </div>
+        </div>
+
+        <!-- 11 - Admin Perfil -->
+        <div class="screen" id="screen-11-admin-perfil">
+            <div class="screen-wrapper">
+                <img src="11-admin-perfil.png" alt="Perfil Admin">
+                <!-- Menu Utilizadores -->
+                <div class="hotspot" data-tooltip="Gestão Utilizadores" onclick="goToView('10-admin-utilizadores')"
+                     style="left: 0; top: 1%; width: 12%; height: 4%;"></div>
+                <!-- Botão Terminar Sessão -->
+                <div class="hotspot" data-tooltip="Terminar Sessão" onclick="goToView('01-escolha-perfil')"
+                     style="left: 93%; top: 1%; width: 7%; height: 4%;"></div>
+            </div>
+        </div>
+
+        <!-- 20 - Docente Minhas UCs -->
+        <div class="screen" id="screen-20-docente-minhas-ucs">
+            <div class="screen-wrapper">
+                <img src="20-docente-minhas-ucs.png" alt="Minhas UCs">
+                <!-- Menu Minhas Propostas -->
+                <div class="hotspot" data-tooltip="Minhas Propostas" onclick="goToView('21-docente-minhas-propostas')"
+                     style="left: 12%; top: 1%; width: 10%; height: 4%;"></div>
+                <!-- Menu Docentes -->
+                <div class="hotspot" data-tooltip="Lista Docentes" onclick="goToView('23-docente-lista-docentes')"
+                     style="left: 22%; top: 1%; width: 8%; height: 4%;"></div>
+                <!-- Menu Perfil -->
+                <div class="hotspot" data-tooltip="Perfil" onclick="goToView('24-docente-perfil')"
+                     style="left: 85%; top: 1%; width: 8%; height: 4%;"></div>
+                <!-- Botão Terminar Sessão -->
+                <div class="hotspot" data-tooltip="Terminar Sessão" onclick="goToView('01-escolha-perfil')"
+                     style="left: 93%; top: 1%; width: 7%; height: 4%;"></div>
+            </div>
+        </div>
+
+        <!-- 21 - Docente Minhas Propostas -->
+        <div class="screen" id="screen-21-docente-minhas-propostas">
+            <div class="screen-wrapper">
+                <img src="21-docente-minhas-propostas.png" alt="Minhas Propostas">
+                <!-- Menu Minhas UCs -->
+                <div class="hotspot" data-tooltip="Minhas UCs" onclick="goToView('20-docente-minhas-ucs')"
+                     style="left: 0; top: 1%; width: 10%; height: 4%;"></div>
+                <!-- Menu Docentes -->
+                <div class="hotspot" data-tooltip="Lista Docentes" onclick="goToView('23-docente-lista-docentes')"
+                     style="left: 22%; top: 1%; width: 8%; height: 4%;"></div>
+                <!-- Botão Nova Proposta -->
+                <div class="hotspot" data-tooltip="Nova Proposta" onclick="goToView('22-docente-nova-proposta')"
+                     style="left: 85%; top: 8%; width: 12%; height: 4%;"></div>
+                <!-- Menu Perfil -->
+                <div class="hotspot" data-tooltip="Perfil" onclick="goToView('24-docente-perfil')"
+                     style="left: 85%; top: 1%; width: 8%; height: 4%;"></div>
+                <!-- Botão Terminar Sessão -->
+                <div class="hotspot" data-tooltip="Terminar Sessão" onclick="goToView('01-escolha-perfil')"
+                     style="left: 93%; top: 1%; width: 7%; height: 4%;"></div>
+            </div>
+        </div>
+
+        <!-- 22 - Docente Nova Proposta -->
+        <div class="screen" id="screen-22-docente-nova-proposta">
+            <div class="screen-wrapper">
+                <img src="22-docente-nova-proposta.png" alt="Nova Proposta">
+                <!-- Menu Minhas UCs -->
+                <div class="hotspot" data-tooltip="Minhas UCs" onclick="goToView('20-docente-minhas-ucs')"
+                     style="left: 0; top: 1%; width: 10%; height: 4%;"></div>
+                <!-- Menu Minhas Propostas -->
+                <div class="hotspot" data-tooltip="Minhas Propostas" onclick="goToView('21-docente-minhas-propostas')"
+                     style="left: 12%; top: 1%; width: 10%; height: 4%;"></div>
+                <!-- Menu Docentes -->
+                <div class="hotspot" data-tooltip="Lista Docentes" onclick="goToView('23-docente-lista-docentes')"
+                     style="left: 22%; top: 1%; width: 8%; height: 4%;"></div>
+                <!-- Menu Perfil -->
+                <div class="hotspot" data-tooltip="Perfil" onclick="goToView('24-docente-perfil')"
+                     style="left: 85%; top: 1%; width: 8%; height: 4%;"></div>
+                <!-- Botão Terminar Sessão -->
+                <div class="hotspot" data-tooltip="Terminar Sessão" onclick="goToView('01-escolha-perfil')"
+                     style="left: 93%; top: 1%; width: 7%; height: 4%;"></div>
+                <!-- Botão Cancelar -->
+                <div class="hotspot" data-tooltip="Cancelar" onclick="goToView('21-docente-minhas-propostas')"
+                     style="left: 3%; top: 85%; width: 8%; height: 4%;"></div>
+            </div>
+        </div>
+
+        <!-- 23 - Docente Lista Docentes -->
+        <div class="screen" id="screen-23-docente-lista-docentes">
+            <div class="screen-wrapper">
+                <img src="23-docente-lista-docentes.png" alt="Lista Docentes">
+                <!-- Menu Minhas UCs -->
+                <div class="hotspot" data-tooltip="Minhas UCs" onclick="goToView('20-docente-minhas-ucs')"
+                     style="left: 0; top: 1%; width: 10%; height: 4%;"></div>
+                <!-- Menu Minhas Propostas -->
+                <div class="hotspot" data-tooltip="Minhas Propostas" onclick="goToView('21-docente-minhas-propostas')"
+                     style="left: 12%; top: 1%; width: 10%; height: 4%;"></div>
+                <!-- Menu Perfil -->
+                <div class="hotspot" data-tooltip="Perfil" onclick="goToView('24-docente-perfil')"
+                     style="left: 85%; top: 1%; width: 8%; height: 4%;"></div>
+                <!-- Botão Terminar Sessão -->
+                <div class="hotspot" data-tooltip="Terminar Sessão" onclick="goToView('01-escolha-perfil')"
+                     style="left: 93%; top: 1%; width: 7%; height: 4%;"></div>
+            </div>
+        </div>
+
+        <!-- 24 - Docente Perfil -->
+        <div class="screen" id="screen-24-docente-perfil">
+            <div class="screen-wrapper">
+                <img src="24-docente-perfil.png" alt="Perfil Docente">
+                <!-- Menu Minhas UCs -->
+                <div class="hotspot" data-tooltip="Minhas UCs" onclick="goToView('20-docente-minhas-ucs')"
+                     style="left: 0; top: 1%; width: 10%; height: 4%;"></div>
+                <!-- Menu Minhas Propostas -->
+                <div class="hotspot" data-tooltip="Minhas Propostas" onclick="goToView('21-docente-minhas-propostas')"
+                     style="left: 12%; top: 1%; width: 10%; height: 4%;"></div>
+                <!-- Menu Docentes -->
+                <div class="hotspot" data-tooltip="Lista Docentes" onclick="goToView('23-docente-lista-docentes')"
+                     style="left: 22%; top: 1%; width: 8%; height: 4%;"></div>
+                <!-- Botão Terminar Sessão -->
+                <div class="hotspot" data-tooltip="Terminar Sessão" onclick="goToView('01-escolha-perfil')"
+                     style="left: 93%; top: 1%; width: 7%; height: 4%;"></div>
+            </div>
+        </div>
+
+        <!-- 30 - Aluno UCs Disponíveis -->
+        <div class="screen" id="screen-30-aluno-ucs-disponiveis">
+            <div class="screen-wrapper">
+                <img src="30-aluno-ucs-disponiveis.png" alt="UCs Disponíveis">
+                <!-- Menu Candidaturas -->
+                <div class="hotspot" data-tooltip="Minhas Candidaturas" onclick="goToView('31-aluno-minhas-candidaturas')"
+                     style="left: 15%; top: 1%; width: 12%; height: 4%;"></div>
+                <!-- Menu Perfil -->
+                <div class="hotspot" data-tooltip="Perfil" onclick="goToView('32-aluno-perfil')"
+                     style="left: 85%; top: 1%; width: 8%; height: 4%;"></div>
+                <!-- Botão Terminar Sessão -->
+                <div class="hotspot" data-tooltip="Terminar Sessão" onclick="goToView('01-escolha-perfil')"
+                     style="left: 93%; top: 1%; width: 7%; height: 4%;"></div>
+            </div>
+        </div>
+
+        <!-- 31 - Aluno Minhas Candidaturas -->
+        <div class="screen" id="screen-31-aluno-minhas-candidaturas">
+            <div class="screen-wrapper">
+                <img src="31-aluno-minhas-candidaturas.png" alt="Minhas Candidaturas">
+                <!-- Menu UCs -->
+                <div class="hotspot" data-tooltip="UCs Disponíveis" onclick="goToView('30-aluno-ucs-disponiveis')"
+                     style="left: 0; top: 1%; width: 12%; height: 4%;"></div>
+                <!-- Menu Perfil -->
+                <div class="hotspot" data-tooltip="Perfil" onclick="goToView('32-aluno-perfil')"
+                     style="left: 85%; top: 1%; width: 8%; height: 4%;"></div>
+                <!-- Botão Terminar Sessão -->
+                <div class="hotspot" data-tooltip="Terminar Sessão" onclick="goToView('01-escolha-perfil')"
+                     style="left: 93%; top: 1%; width: 7%; height: 4%;"></div>
+            </div>
+        </div>
+
+        <!-- 32 - Aluno Perfil -->
+        <div class="screen" id="screen-32-aluno-perfil">
+            <div class="screen-wrapper">
+                <img src="32-aluno-perfil.png" alt="Perfil Aluno">
+                <!-- Menu UCs -->
+                <div class="hotspot" data-tooltip="UCs Disponíveis" onclick="goToView('30-aluno-ucs-disponiveis')"
+                     style="left: 0; top: 1%; width: 12%; height: 4%;"></div>
+                <!-- Menu Candidaturas -->
+                <div class="hotspot" data-tooltip="Minhas Candidaturas" onclick="goToView('31-aluno-minhas-candidaturas')"
+                     style="left: 15%; top: 1%; width: 12%; height: 4%;"></div>
+                <!-- Botão Terminar Sessão -->
+                <div class="hotspot" data-tooltip="Terminar Sessão" onclick="goToView('01-escolha-perfil')"
+                     style="left: 93%; top: 1%; width: 7%; height: 4%;"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Mini mapa de navegação -->
+    <div class="nav-map">
+        <h3>Navegação Rápida</h3>
+        <div class="nav-map-links" id="navMapLinks"></div>
+    </div>
+
+    <script>
+        // Lista de views com nomes legíveis
+        const views = {
+            '01-escolha-perfil': 'Escolha de Perfil',
+            '02-login-admin': 'Login Admin',
+            '03-login-docente': 'Login Docente',
+            '04-login-aluno': 'Login Aluno',
+            '05-registo-docente': 'Registo Docente',
+            '06-registo-aluno': 'Registo Aluno',
+            '07-lista-docentes-anonimo': 'Docentes (Anónimo)',
+            '10-admin-utilizadores': 'Admin: Utilizadores',
+            '11-admin-perfil': 'Admin: Perfil',
+            '20-docente-minhas-ucs': 'Docente: UCs',
+            '21-docente-minhas-propostas': 'Docente: Propostas',
+            '22-docente-nova-proposta': 'Docente: Nova Proposta',
+            '23-docente-lista-docentes': 'Docente: Docentes',
+            '24-docente-perfil': 'Docente: Perfil',
+            '30-aluno-ucs-disponiveis': 'Aluno: UCs',
+            '31-aluno-minhas-candidaturas': 'Aluno: Candidaturas',
+            '32-aluno-perfil': 'Aluno: Perfil'
+        };
+
+        let currentView = '01-escolha-perfil';
+        let showHotspots = false;
+
+        // Inicializar mini mapa
+        function initNavMap() {
+            const container = document.getElementById('navMapLinks');
+            for (const [id, name] of Object.entries(views)) {
+                const btn = document.createElement('button');
+                btn.textContent = name;
+                btn.onclick = () => goToView(id);
+                btn.id = 'nav-' + id;
+                container.appendChild(btn);
+            }
+        }
+
+        // Navegar para uma view
+        function goToView(viewId) {
+            // Esconder todas as screens
+            document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+
+            // Mostrar a screen selecionada
+            const screen = document.getElementById('screen-' + viewId);
+            if (screen) {
+                screen.classList.add('active');
+                currentView = viewId;
+
+                // Atualizar selector
+                document.getElementById('viewSelector').value = viewId;
+
+                // Atualizar nome da view atual
+                document.getElementById('currentViewName').textContent = views[viewId] || viewId;
+
+                // Atualizar mini mapa
+                document.querySelectorAll('.nav-map-links button').forEach(btn => {
+                    btn.classList.remove('current');
+                });
+                const navBtn = document.getElementById('nav-' + viewId);
+                if (navBtn) navBtn.classList.add('current');
+
+                // Scroll para topo
+                window.scrollTo(0, 0);
+            }
+        }
+
+        // Toggle hotspots
+        function toggleHotspots() {
+            showHotspots = !showHotspots;
+            document.getElementById('protoContainer').classList.toggle('show-hotspots', showHotspots);
+            document.querySelector('.toggle-btn').classList.toggle('active', showHotspots);
+        }
+
+        // Atalhos de teclado
+        document.addEventListener('keydown', (e) => {
+            const viewIds = Object.keys(views);
+            const currentIndex = viewIds.indexOf(currentView);
+
+            if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+                e.preventDefault();
+                const nextIndex = (currentIndex + 1) % viewIds.length;
+                goToView(viewIds[nextIndex]);
+            } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+                e.preventDefault();
+                const prevIndex = (currentIndex - 1 + viewIds.length) % viewIds.length;
+                goToView(viewIds[prevIndex]);
+            } else if (e.key === 'h' || e.key === 'H') {
+                toggleHotspots();
+            } else if (e.key === 'Escape') {
+                goToView('01-escolha-perfil');
+            }
+        });
+
+        // Inicializar
+        initNavMap();
+        goToView('01-escolha-perfil');
+    </script>
+</body>
+</html>
