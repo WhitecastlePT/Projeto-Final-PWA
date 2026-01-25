@@ -3,6 +3,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import passport from './config/passport.js';
 
 // Importar rotas
 import authRotas from './rotas/authRotas.js';
@@ -46,6 +47,9 @@ app.use(express.json());
 
 // Parser de URL encoded
 app.use(express.urlencoded({ extended: true }));
+
+// Inicializar Passport (Google OAuth)
+app.use(passport.initialize());
 
 // Servir ficheiros estáticos da pasta uploads
 app.use('/uploads', express.static(path.join(__dirname, '../uploads')));

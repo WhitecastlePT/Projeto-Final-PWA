@@ -84,7 +84,7 @@
             <textarea
               v-model="observacoesCandidatura"
               class="formulario-input formulario-textarea"
-              placeholder="Apresente-se e explique porque está interessado nesta proposta..."
+              placeholder="Indique ao professor o que pensa usar neste projeto..."
               rows="4"
             ></textarea>
           </div>

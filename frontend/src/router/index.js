@@ -5,6 +5,7 @@ import { useAutenticacaoStore } from '../store/autenticacao';
 import EscolhaPerfil from '../views/EscolhaPerfil.vue';
 import Login from '../views/Login.vue';
 import Registo from '../views/Registo.vue';
+import AuthCallback from '../views/AuthCallback.vue';
 import ListaPropostas from '../views/ListaPropostas.vue';
 import ListaDocentes from '../views/ListaDocentes.vue';
 import MinhasPropostas from '../views/MinhasPropostas.vue';
@@ -50,6 +51,14 @@ const rotas = [
     name: 'Registo',
     component: Registo,
     meta: { semLayout: true, apenasConvidados: true }
+  },
+
+  // Callback OAuth (Google)
+  {
+    path: '/auth/callback',
+    name: 'AuthCallback',
+    component: AuthCallback,
+    meta: { semLayout: true }
   },
 
   // Rotas de Admin

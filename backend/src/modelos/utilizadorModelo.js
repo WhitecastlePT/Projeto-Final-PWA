@@ -334,6 +334,71 @@ export const contarCandidaturas = async (alunoId) => {
 };
 
 /**
+ * Buscar utilizador por Google ID
+ * @param {string} googleId - Google ID do utilizador
+ * @returns {Promise<Object|null>} Utilizador ou null
+ */
+export const buscarPorGoogleId = async (googleId) => {
+    const query = `
+        SELECT id, nome, email, tipo, aprovado, gabinete, departamento,
+               numero_aluno, curso, google_id, data_criacao
+        FROM utilizador
+        WHERE google_id = $1
+    `;
+    const resultado = await executarQuery(query, [googleId]);
+    return resultado.rows[0] || null;
+};
+
+/**
+ * Vincular conta Google a utilizador existente
+ * @param {number} id - ID do utilizador
+ * @param {string} googleId - Google ID
+ * @returns {Promise<Object>} Utilizador atualizado
+ */
+export const vincularGoogle = async (id, googleId) => {
+    const query = `
+        UPDATE utilizador
+        SET google_id = $1
+        WHERE id = $2
+        RETURNING id, nome, email, tipo, aprovado, google_id, data_criacao
+    `;
+    const resultado = await executarQuery(query, [googleId, id]);
+    return resultado.rows[0];
+};
+
+/**
+ * Criar utilizador via Google OAuth
+ * @param {Object} dados - Dados do utilizador
+ * @returns {Promise<Object>} Utilizador criado
+ */
+export const criarUtilizadorGoogle = async (dados) => {
+    const query = `
+        INSERT INTO utilizador (
+            nome, email, google_id, tipo, aprovado,
+            gabinete, departamento, numero_aluno, curso
+        )
+        VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
+        RETURNING id, nome, email, tipo, aprovado, gabinete, departamento,
+                  numero_aluno, curso, google_id, data_criacao
+    `;
+
+    const valores = [
+        dados.nome,
+        dados.email,
+        dados.google_id,
+        dados.tipo || 'docente',
+        dados.aprovado || false,
+        dados.gabinete || null,
+        dados.departamento || null,
+        dados.numero_aluno || null,
+        dados.curso || null
+    ];
+
+    const resultado = await executarQuery(query, valores);
+    return resultado.rows[0];
+};
+
+/**
  * Obter estatísticas do utilizador
  * @param {number} id - ID do utilizador
  * @returns {Promise<Object>} Estatísticas

@@ -80,7 +80,7 @@ CREATE TABLE utilizador (
     id SERIAL PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,
     email VARCHAR(255) UNIQUE NOT NULL,
-    palavra_passe VARCHAR(255) NOT NULL,
+    palavra_passe VARCHAR(255),  -- Nullable para utilizadores OAuth (Google)
     tipo tipo_utilizador NOT NULL,
     aprovado BOOLEAN DEFAULT FALSE,
     data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -90,6 +90,8 @@ CREATE TABLE utilizador (
     -- Campos específicos para Aluno (nullable)
     numero_aluno VARCHAR(50) UNIQUE,
     curso VARCHAR(255),
+    -- Campo para autenticação OAuth (Google)
+    google_id VARCHAR(255) UNIQUE,
     CONSTRAINT email_valido CHECK (email ~* '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}$')
 );
 
@@ -249,6 +251,7 @@ CREATE INDEX idx_utilizador_email ON utilizador(email);
 CREATE INDEX idx_utilizador_tipo ON utilizador(tipo);
 CREATE INDEX idx_utilizador_aprovado ON utilizador(aprovado);
 CREATE INDEX idx_utilizador_numero_aluno ON utilizador(numero_aluno);
+CREATE INDEX idx_utilizador_google_id ON utilizador(google_id);
 
 -- Índices para unidade curricular
 CREATE INDEX idx_uc_docente ON unidade_curricular(docente_id);
@@ -318,7 +321,8 @@ CREATE TRIGGER trigger_atualizar_candidatura
 -- Comentários nas Tabelas
 -- =====================================================
 
-COMMENT ON TABLE utilizador IS 'Armazena informação de todos os utilizadores (admin, docentes e alunos)';
+COMMENT ON TABLE utilizador IS 'Armazena informação de todos os utilizadores (admin, docentes e alunos). Suporta autenticação tradicional e OAuth (Google)';
+COMMENT ON COLUMN utilizador.google_id IS 'ID do utilizador no Google para autenticação OAuth2';
 COMMENT ON TABLE unidade_curricular IS 'Armazena as unidades curriculares criadas pelos docentes';
 COMMENT ON TABLE palavra_chave IS 'Armazena palavras-chave que podem ser associadas a propostas';
 COMMENT ON TABLE proposta IS 'Armazena as propostas de projeto criadas pelos docentes';
